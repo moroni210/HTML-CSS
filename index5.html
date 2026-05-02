@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop</title>
+</head>
+<body>  
+    <p>Inscrição do workshop</p>
+    <form action="" method="POST">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="name" placeholder="nome completo"required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email"required>
+
+        <label for="telefone">Numero de telefone</label>
+        <input id="telefone" name="telefone" type="tel" pattern="[0-9]{10,11}" placeholder="Seu numero por favor"required>
+
+        <label for="data de nascimento">Data de nascimento</label>
+        <input id="data-nascimento" name="data-nascimento" type="date">
+
+        <label for="idade">idade</label>
+        <input type="number" name="idade" id="idade" min="13" max="75" step="1">
+
+        <Label for="sexo">Masculino</Label>
+        <input id="masculino" name="sexo"  type="radio" value="masculino">
+
+        <label for="sexo">Feminino</label>
+        <input id="feminino" type="radio" value="feminino" name="sexo"><br>
+
+
+        <label for="objetivo">Aceite os termos de condições</label>
+        <input type="checkbox" name="aceite" id="objetivo" value="aprender"required="aceite os termos de condições"><br>
+
+        <label for="objetivo"></label>
+        <textarea name="aceite os termos" id="Termos de condições" minlength="1" maxlength="400"></textarea>
+
+
+        
+<select name="trilha" id="">
+            <option value="selecione">selecionar opção</option>
+            <option value="frontend">frontend</option>
+            <option value="backend">backend</option>
+            <option value="fullstack">fullstack</option>
+        </select>
+        <select name="cidade" id="">
+            <option value="selecione">selecionar cidade</option>
+            <option value="sao paulo">São Paulo</option>
+            <option value="rio de janeiro">Rio de Janeiro</option>
+            <option value="belo horizonte">Belo Horizonte</option>
+        </select>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html
